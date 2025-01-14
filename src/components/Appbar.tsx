@@ -14,16 +14,6 @@ const Appbar = () => {
     setIsNewsDropdownOpen((prev) => !prev);
   };
 
-  const handleMouseEnter = () => {
-    setIsNewsDropdownOpen(true);
-  };
-
-  const handleMouseLeave = () => {
-    setTimeout(() => {
-      setIsNewsDropdownOpen(false);
-    }, 10000); // 2 seconds delay
-  };
-
   return (
     <nav className="border-gray-200 bg-white dark:bg-gray-900">
       <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">

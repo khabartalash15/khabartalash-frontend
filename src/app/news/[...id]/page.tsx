@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { News } from "@/utils/types";
 
-const page = async ({ params }: { params: { id: string } }) => {
+const page = async ({ params }: { params: Promise<{ id: string[] }> }) => {
   const { id } = await params;
 
   const data = await fetch(`http://localhost:5000/api/news/${id}`);

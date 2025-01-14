@@ -1,13 +1,12 @@
 "use client";
 import React, { useRef, useCallback } from "react";
-import Link from "next/link";
 import useFetchNews from "@/hooks/useFetchNews";
 import { News } from "@/utils/types";
 import { capitalizeFirstLetter } from "@/utils/helpers";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
-const CategoryNewsScreen = ({ slug }: { slug: string }) => {
+const CategoryNewsScreen = ({ slug }: { slug: string[] }) => {
   const capitalizedSlug = capitalizeFirstLetter(slug[0]);
   const { news, loading, error, loadMore, currentPage, totalPages } =
     useFetchNews(1, 10, capitalizedSlug);

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { BASE_URL } from "@/utils/const";
 import { useState, useEffect } from "react";
 
@@ -29,7 +30,7 @@ const useFetchNews = (initialPage = 1, limit = 10, category = "all") => {
       } else {
         throw new Error(data.message || "Failed to fetch news.");
       }
-    } catch (err) {
+    } catch (err: any) {
       console.error(err);
       setError(err.message || "An error occurred.");
     } finally {
