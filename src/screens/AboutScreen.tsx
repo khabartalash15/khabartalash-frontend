@@ -1,4 +1,5 @@
 import React from "react";
+import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaUser } from "react-icons/fa"; // Importing icons from react-icons
 
 const AboutUs = () => {
   const services = [
@@ -6,6 +7,7 @@ const AboutUs = () => {
     "भारतको विभिन्न राज्यबाट नेपाल जानको लागि र नेपालको विभिन्न जिल्लाबाट भारत आउनको लागि तपाईँको व्यवस्थित सिट र आरामदायी यात्राको लागि हामीलाई सम्पर्क गर्नुहोस्।।",
     "नेपालदेखि भारतलाई आफ्नो कर्मक्षेत्र बनाएर आइसके पछि केही त रकम जोड्नु नै भाको होला। अब सहजै छिटो र छरितो आफ्नो नागरिकता वा बैंक को खातामा दुई मिनेटमै पैसा नेपाल पठाउनको लागि हामीलाई सम्झनुहोस।।।",
   ];
+
   return (
     <div className="bg-gray-100 px-6 py-12">
       <div className="mx-auto max-w-7xl">
@@ -52,7 +54,7 @@ const AboutUs = () => {
                 alt="Team Member"
                 className="mx-auto mb-4 h-40 w-40 rounded-full"
               />
-              <h3 className="text-2xl font-bold text-gray-800">
+              <h3 className="flex items-center justify-center text-2xl font-bold text-gray-800">
                 Jeevan Gharti
               </h3>
               <p className="text-gray-600">Editor-in-Chief</p>
@@ -74,6 +76,7 @@ const AboutUs = () => {
 
             {/* Email Section */}
             <div className="flex items-center space-x-2">
+              <FaEnvelope className="" />
               <span className="font-medium text-gray-700">Email:</span>
               <a
                 href="mailto:contact@khabartalash.com"
@@ -85,6 +88,7 @@ const AboutUs = () => {
 
             {/* Nepal Contact Section */}
             <div className="flex items-center space-x-2">
+              <FaPhoneAlt className="" />
               <span className="font-medium text-gray-700">नेपाल सम्पर्क-:</span>
               <a
                 href="tel:+9779769823841"
@@ -96,6 +100,7 @@ const AboutUs = () => {
 
             {/* India Contact Section */}
             <div className="flex items-center space-x-2">
+              <FaPhoneAlt className="" />
               <span className="font-medium text-gray-700">भारत सम्पर्क-:</span>
               <a
                 href="tel:+919872981511"
