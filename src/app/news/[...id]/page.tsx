@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import { News } from "@/utils/types";
+import { BASE_URL } from "@/utils/const";
 
 const page = async ({ params }: { params: Promise<{ id: string[] }> }) => {
   const { id } = await params;
 
-  const data = await fetch(`http://localhost:5000/api/news/${id}`);
+  const data = await fetch(`${BASE_URL}/news/${id}`);
   const newsData = await data.json();
   const news: News = newsData.news;
 
