@@ -15,6 +15,10 @@ const nextConfig = {
         protocol: "https", // Allow images from 3m9tk0am4y.ufs.sh
         hostname: "3m9tk0am4y.ufs.sh",
       },
+      {
+        protocol: "https", // Allow images from b8rj0050qu.ufs.sh
+        hostname: "b8rj0050qu.ufs.sh",
+      },
     ],
   },
 };
