@@ -11,13 +11,7 @@ const convertToEmbedUrl = (videoLink: string): string => {
 
 const InterviewScreen = async () => {
   try {
-    const data = await fetch(`${BASE_URL}/interviews`, {
-      method: "GET",
-      headers: {
-        "Cache-Control": "no-cache",
-      },
-    });
-
+    const data = await fetch(`${BASE_URL}/interviews`);
     const interviewData = await data.json();
     const interviews = interviewData.data;
 
